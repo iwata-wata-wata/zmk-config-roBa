@@ -49,6 +49,14 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        window_change: window_change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&macro_press>, <&kp TAB>, <&macro_tap>;
+
+            label = "WINDOW_CHANGE";
+        };
     };
 
     behaviors {
@@ -67,10 +75,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R          &kp T                                                  &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F          &kp G      &kp ESC        &mo 3                        &kp H            &kp J  &kp K      &kp L    &kp ENTER
-&kp Z      &kp X         &kp C         &kp V          &kp B      &kp MINUS      &kp RA(LANG_ZENKAKUHANKAKU)  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp TAB        &mo 2                        &kp RIGHT_SHIFT                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R          &kp T                                           &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F          &kp G      &kp ESC        &mo 3                 &kp H            &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X         &kp C         &kp V          &kp B      &kp MINUS      &kp RA(INT_MUHENKAN)  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp TAB        &mo 2                 &kp RIGHT_SHIFT                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -96,7 +104,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp RA(LS(TAB))         &kp UP_ARROW    &kp LA(TAB)              &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp ESCAPE      &window_change          &kp UP_ARROW    &window_change           &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &kp F12
