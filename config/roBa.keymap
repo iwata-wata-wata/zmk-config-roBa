@@ -101,7 +101,7 @@
             bindings = <
 &trans       &window_change  &kp UP_ARROW    &window_change   &trans                                          &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans          &kp PRINTSCREEN  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans       &trans          &trans          &trans           &trans         &kp LG(F4)      &trans           &trans  &trans  &trans  &trans  &kp F11
+&trans       &trans          &trans          &trans           &trans         &kp RA(F4)      &trans           &trans  &trans  &trans  &trans  &kp F11
 &trans       &trans          &trans          &kp DELETE       &trans         &trans          &trans           &trans                          &kp F12
             >;
 
