@@ -36,6 +36,11 @@
             bindings = <&mo 6>;
             key-positions = <15 27>;
         };
+
+        mouse {
+            bindings = <&mo 0>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
