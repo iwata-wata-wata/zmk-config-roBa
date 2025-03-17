@@ -32,12 +32,12 @@
             key-positions = <11 10>;
         };
 
-        copy {
+        paste {
             bindings = <&kp LC(V)>;
             key-positions = <19 20>;
         };
 
-        paste {
+        copy {
             bindings = <&kp LC(C)>;
             key-positions = <19 18>;
         };
