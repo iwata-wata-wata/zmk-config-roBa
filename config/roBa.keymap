@@ -107,9 +107,9 @@
 
         ARROW {
             bindings = <
-&kp HOME     &trans          &kp UP_ARROW    &trans           &kp END                                         &kp F1   &kp F2  &kp F3  &kp F4  &kp F5
-&kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans          &kp PRINTSCREEN  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
-&trans       &trans          &trans          &trans           &trans         &kp RA(F4)      &trans           &kp F13  &trans  &trans  &trans  &kp F11
+&kp HOME     &none           &kp UP_ARROW    &none            &kp END                                         &kp F1   &kp F2  &kp F3  &kp F4  &kp F5
+&kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none           &kp PRINTSCREEN  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
+&none        &none           &none           &none            &none          &kp RA(F4)      &none            &kp F13  &none   &none   &none   &kp F11
 &trans       &trans          &trans          &kp DELETE       &trans         &trans          &trans           &trans                           &kp F12
             >;
 
@@ -118,10 +118,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3        &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &msc SCRL_DOWN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
+&none   &none   &none   &none   &none                       &none  &none     &msc SCRL_UP    &none     &none
+&none   &none   &none   &none   &none   &none       &trans  &none  &mkp MB1  &mkp MB3        &mkp MB2  &none
+&none   &none   &none   &none   &none   &none       &trans  &none  &none     &msc SCRL_DOWN  &none     &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none   &none                                      &trans
             >;
         };
 
