@@ -29,7 +29,7 @@
 
         ime {
             bindings = <&to_layer_0 RA(GRAVE)>;
-            key-positions = <11 10>;
+            key-positions = <1 0>;
         };
 
         back {
