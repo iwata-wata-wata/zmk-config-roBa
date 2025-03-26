@@ -73,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W         &kp E         &kp R          &kp T                                      &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F          &kp G      &kp ESC               &mo 6     &kp H  &kp J  &kp K      &kp L    &kp ENTER
-&kp Z       &kp X         &kp C         &kp V          &kp B      &kp MINUS             &kp CAPS  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp LEFT_CONTROL      &mo 1     &mo 3                             &kp RIGHT_SHIFT
+&kp Q       &kp W         &kp E         &kp R          &kp T                                           &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D         &kp F          &kp G      &kp ESC               &mo 6          &kp H  &kp J  &kp K      &kp L    &kp ENTER
+&kp Z       &kp X         &kp C         &kp V          &kp B      &kp MINUS             &kp LC(SPACE)  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp LEFT_CONTROL      &mo 1          &mo 3                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -87,7 +87,7 @@
 &kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                     &kp CARET         &kp AMPERSAND      &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans         &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH   &kp DOLLAR            &kp PERCENT
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &kp EQUAL      &kp SEMICOLON   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT    &kp GRAVE             &kp NON_US_BACKSLASH
-&trans           &trans           &trans           &trans           &trans        &trans         &trans          &trans                                                                &kp PIPE
+&kp KP_NUMLOCK   &trans           &trans           &trans           &trans        &trans         &trans          &trans                                                                &kp PIPE
             >;
         };
 
