@@ -63,6 +63,11 @@
             bindings = <&mkp MB5>;
             key-positions = <41 18>;
         };
+
+        winkensaku {
+            bindings = <&kp LG(Q)>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
@@ -130,10 +135,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mkp MB3        &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &msc SCRL_DOWN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
+&kp ESC             &trans  &trans     &trans     &trans                            &trans  &trans    &msc SCRL_UP    &trans    &trans
+&kp LG(LEFT_ARROW)  &trans  &kp LC(C)  &kp LC(V)  &kp LG(V)  &kp LC(W)      &trans  &trans  &mkp MB1  &mkp MB3        &mkp MB2  &kp LG(RIGHT_ARROW)
+&trans              &trans  &trans     &trans     &trans     &kp TAB        &trans  &trans  &trans    &msc SCRL_DOWN  &trans    &trans
+&trans              &trans  &trans     &trans     &trans     &trans         &trans  &trans                                      &trans
             >;
         };
 
